@@ -75,6 +75,15 @@ end
 # result 
 # end
 
+def reduce_to_all_true(array)
+  result = true
+  if (array.any? { |element| element != "true"} )
+    result = false
+    return 
+  end 
+result 
+end
+
 # reduce_to_any_true returns true when a truthy value is present
 # reduce_to_any_true returns false when no truthy value is present
 
