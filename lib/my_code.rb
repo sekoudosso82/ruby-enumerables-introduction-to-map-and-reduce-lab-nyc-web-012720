@@ -91,12 +91,7 @@ end
 
 def reduce_to_any_true(array)
   array.any? { |element| element == true } 
-  # if (array.any? { |element| element == true } )
-    # return true 
-  # else 
-  #   return false
-  # end
-# false 
+  
 end 
 
 # def reduce_to_any_true(array)
