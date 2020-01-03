@@ -70,7 +70,7 @@ def reduce_to_all_true(array)
   result = true
   if (array.any? { |element| element != "true"} )
     result = false
-    return 
+    return result
   end 
 result 
 end
