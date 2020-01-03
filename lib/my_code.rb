@@ -91,9 +91,9 @@ end
 
 def reduce_to_any_true(array)
   array.any? { |element| element == true } 
-  
 end 
 
+# or we can do the while loop 
 # def reduce_to_any_true(array)
 #   l = array.length 
 #   counter = 0 
