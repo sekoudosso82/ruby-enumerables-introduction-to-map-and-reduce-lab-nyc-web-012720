@@ -66,27 +66,36 @@ end
 #   reduce_to_all_true returns true when all values are truthy
 #   reduce_to_all_true returns false when any value is false
 
-def reduce_to_all_true(array)
-   result = true
-  if (array.any? { |element| element != "true"} )
-    result = false
-    return 
-  end 
-result 
-end
+# def reduce_to_all_true(array)
+#   result = true
+#   if (array.any? { |element| element != "true"} )
+#     result = false
+#     return 
+#   end 
+# result 
+# end
 
 # reduce_to_any_true returns true when a truthy value is present
 # reduce_to_any_true returns false when no truthy value is present
+# def reduce_to_any_true(array)
+#   if (array.any? { |element| element == "true"} )
+#     return true 
+#   # else 
+#   #   return false
+#   end
+# false 
+# end 
+
 def reduce_to_any_true(array)
-  if (array.any? { |element| element == "true"} )
-    return true 
-  # else 
-  #   return false
-  end
-false 
-end 
-
-
+l = array.length 
+  new_array = []
+  counter = 0 
+  while counter < l 
+    new_array.push(array[counter]*array[counter])
+    counter += 1
+  end 
+  new_array
+end
 
 
 
