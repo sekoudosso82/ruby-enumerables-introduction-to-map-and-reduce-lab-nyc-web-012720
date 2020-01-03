@@ -73,7 +73,7 @@ def reduce_to_all_true(array)
     return 
   end 
 result 
-# end
+end
 
 # def reduce_to_all_true(array)
 #   l = array.length 
