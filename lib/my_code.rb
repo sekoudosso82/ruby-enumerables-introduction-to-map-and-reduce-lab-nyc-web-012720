@@ -94,7 +94,7 @@ def reduce_to_any_true(array)
     return true if array[counter] == "true"
     counter += 1
   end 
-false
+  false
 end
 
 
