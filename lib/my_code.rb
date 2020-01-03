@@ -87,14 +87,13 @@ end
 # end 
 
 def reduce_to_any_true(array)
-l = array.length 
-  new_array = []
+  l = array.length 
   counter = 0 
   while counter < l 
-    new_array.push(array[counter]*array[counter])
+    return true if array[counter]== "true"
     counter += 1
   end 
-  new_array
+false 
 end
 
 
