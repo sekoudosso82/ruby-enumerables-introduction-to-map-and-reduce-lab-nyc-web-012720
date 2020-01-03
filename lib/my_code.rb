@@ -76,12 +76,13 @@ end
 # end
 
 def reduce_to_all_true(array)
-  result = true
-  if (array.any? { |element| element != "true"} )
-    result = false
-    return 
+  l = array.length 
+  counter = 0 
+  while counter < l do 
+    return false if array[counter] == "false"
+    counter += 1
   end 
-result 
+  true 
 end
 
 # reduce_to_any_true returns true when a truthy value is present
