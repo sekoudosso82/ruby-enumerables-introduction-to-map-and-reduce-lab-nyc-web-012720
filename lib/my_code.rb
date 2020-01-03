@@ -90,7 +90,7 @@ end
 def reduce_to_any_true(array)
   l = array.length 
   counter = 0 
-  while counter < l 
+  while counter < l do 
     return true if array[counter]== "true"
     counter += 1
   end 
