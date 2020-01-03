@@ -75,15 +75,15 @@ end
 # result 
 # end
 
-# def reduce_to_all_true(array)
-#   l = array.length 
-#   counter = 0 
-#   while counter < l do 
-#     return false if array[counter] == ("false" || nil )
-#     counter += 1
-#   end 
-#   true 
-# end
+def reduce_to_all_true(array)
+  l = array.length 
+  counter = 0 
+  while counter < l do 
+    return false if array[counter] == ("false" || nil )
+    counter += 1
+  end 
+  true 
+end
 
 # reduce_to_any_true returns true when a truthy value is present
 # reduce_to_any_true returns false when no truthy value is present
